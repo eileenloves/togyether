@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="친목을 도모할 계모임을 만들어보세요.">
+  <meta name="author" content="">
+  <title>계 만들기 | 함계(TOGYETHER)</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+
+  <style>
+    .relay-area{
+      position: relative;
+      width: 1100px;
+      height: 280px;
+      margin-left: -15px;
+      background-image:url('piggybank_title.png');
+      background-color: beige;
+    }
+    .goal-area {
+      position: relative;
+      width: 1100px;
+      height: 280px;
+      margin-left: -15px;
+      background-image:url('goal_title.png');
+      background-color:antiquewhite;
+    }
+    h4.relay-title {
+      color: rgb(70, 67, 67);
+      padding-left: 440px; 
+      padding-top: 40px;
+    }
+    h4.goal-title {
+      color: rgb(70, 67, 67);
+      padding-left: 440px;
+      padding-top: 40px;
+    }
+    h6.relay-tag {
+      color: rgb(184, 179, 179);
+      padding-left: 444px;
+    }
+    h6.goal-tag {
+      color: rgb(184, 179, 179);
+      padding-left: 444px;
+    }
+    h6.relay-tag::after {
+      content: "";
+      display: block;
+      width: 45px;
+      border-bottom: 1px solid #615f5f;
+      margin: 20px 0px;
+    }
+    h6.goal-tag::after {
+      content: "";
+      display: block;
+      width: 45px;
+      border-bottom: 1px solid #615f5f;
+      margin: 20px 0px;
+    }
+    
+    h6.relay-description{
+      color: rgb(70, 67, 67);
+      padding-left: 445px;
+    }
+    h6.goal-description{
+      color: rgb(70, 67, 67);
+      padding-left: 445px;
+    }
+
+    #creatgye-btn {
+      margin: 15px 445px; 
+    }
+    
+    
+    
+
+  </style>
+
+
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="main.html"><image src="logo.png" width="28" height="28"></image>   TOGYETHER</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="mkgye">
+          <a class="nav-link" href="mkGye.html">
+              <a class="nav-link" href="CreateGyeMain.html">
+                  <i class="fa fa-fw fa-wrench"></i>
+                  <span class="nav-link-text" >계만들기</span>
+              </a>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="group">
+          <a class="nav-link nav-link-collapse collapsed"  data-toggle="collapse"  href="#collapseGroup" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">나의 계모임보기</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseGroup">
+              <li>
+                <a href="group1.html">모임1</a>
+              </li>
+              <li>
+                <a href="group2.html">모임2</a>
+              </li>
+            </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-envelope"></i>
+            <span class="d-lg-none">Messages
+              <span class="badge badge-pill badge-primary">12 New</span>
+            </span>
+            <span class="indicator text-primary d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+            <h6 class="dropdown-header">New Messages:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>David Miller</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>Jane Smith</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">I was wondering if you could meet for an appointment at 3:00 instead of 4:00. Thanks!</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>John Doe</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">I've sent the final files over to you for review. When you're able to sign off of them let me know and we can discuss distribution.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">View all messages</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-bell"></i>
+            <span class="d-lg-none">Alerts
+              <span class="badge badge-pill badge-warning">6 New</span>
+            </span>
+            <span class="indicator text-warning d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+            <h6 class="dropdown-header">New Alerts:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-danger">
+                <strong>
+                  <i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">View all alerts</a>
+          </div>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="content-wrapper">
+     <div class="container-fluid"> 
+      <!-- Choose Gye -->
+      <div class="relay-area">
+          <h4 class="relay-title">릴레이형</h4>
+          <h6 class="relay-tag"><b>계모임</b></h6>
+          <h6 class="relay-description"><b>릴레이 형식으로 돌아가면서 계원들의 개인 목돈 마련이 가능합니다.</b></h6>
+          <a class="btn btn-primary" id="creatgye-btn" href="CreateGyeRelay.html">릴레이 계 만들기</a>
+        </div>
+        <div class="goal-area">
+            <h4 class="goal-title">목표달성형</h4>
+            <h6 class="goal-tag"><b>계모임</b></h6>
+            <h6 class="goal-description"><b>여행과 같은 공동의 목표를 위한 목돈을 마련할 수 있습니다.</b></h6>
+            <a class="btn btn-primary" id="creatgye-btn" href="CreateGyeGoal.html">목표달성 계 만들기</a>
+        </div>
+      
+
+    
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Logout하시겠습니까?</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">Logout을 원하시면 "Logout"을 눌러주세요.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="LogMain.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+    <script src="js/sb-admin-charts.min.js"></script>
+  </div>
+</body>
+
+</html>
